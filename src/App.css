@@ -1,3 +1,11 @@
 body {
   background-color:#fffef2;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 52px;
+  font-size: 52px;
+  color: white;
+  text-shadow: 2px 2px gainsboro;
+}
