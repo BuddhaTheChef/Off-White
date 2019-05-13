@@ -9,18 +9,21 @@ h1 {
   text-align: center;
   margin-top: 52px;
   font-size: 52px;
+  margin-left: 75px;
   color: white;
   text-shadow: 2px 2px gainsboro;
+  z-index: 1;
+  position: absolute;
+
 }
 
 .main-home {
-  background: black;
-  width: 98%;
-  height: 750px;
+  background: #4bc491;
+  width: 100%;
+  height: 970px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
 .temp-placeholder {
@@ -32,9 +35,10 @@ h1 {
 .bot-home-div {
   width: 100%;
   height: 970px;
-  background-color: beige;
+  background-color: #4bc491;
   display: flex;
   flex-direction: column;
+  margin-top: 205px;
 }
 
 .temp-h3-title {
@@ -103,7 +107,8 @@ h1 {
 	 width: 0px;
 	 height: 100%;
 	 overflow: hidden;
-	 padding-top: 50px;
+   padding-top: 50px;
+   z-index: 2;
 	 -webkit-transition-duration: 0.2s;
 	 -moz-transition-duration: 0.2s;
 	 -ms-transition-duration: 0.2s;
@@ -184,7 +189,7 @@ h1 {
 	 margin-top: 8px;
 }
  #hamburger:checked ~ .menu {
-	 width: 250px;
+	 width: 450px;
 }
  #hamburger:checked ~ .menuicon span {
 	 background-color: rgba(0, 0, 0, 0);
