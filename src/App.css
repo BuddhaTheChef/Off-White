@@ -1,5 +1,8 @@
 body {
   background-color:#fffef2;
+  margin: 0px;
+  padding: 0px; 
+  width: 100%;
 }
 
 h1 {
@@ -8,4 +11,20 @@ h1 {
   font-size: 52px;
   color: white;
   text-shadow: 2px 2px gainsboro;
+}
+
+.main-home {
+  background: black;
+  width: 98%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.temp-placeholder {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
 }
