@@ -11,7 +11,9 @@ class Home extends Component {
             <div className="bot-home-div">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
                 <div className="bot-cat-home-div">
-                    <h6 className="bot-content-home">Content</h6>
+                    <div className="content-type-1">1</div>
+                    <div className="content-type-2">2</div>
+                    <div className="content-type-3">3</div>
                 </div>
             </div>
         </div>    
