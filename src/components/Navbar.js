@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
+import {Link, withRouter} from 'react-router-dom';
 
-class Navbar extends Component {
-  render() {
+const Navbar = () => {
     return (
       <div className="main-nav-div">
         <input type="checkbox" id="hamburger" />
@@ -11,18 +11,26 @@ class Navbar extends Component {
         <div className="menu">
           <ul>
             <li>
-              <a href="http://www.google.com">home</a>
+              <Link  to='/' className="nav-links">Home</Link>
             </li>
             <li>
-              <a href="http://www.google.com">blog</a>
+              <Link  to='/Trending' className="nav-links">Trending</Link>
             </li>
             <li>
-              <a href="http://www.google.com">about</a>
+              <Link  to='/Profile' className="nav-links">Profile</Link>
+            </li>
+            <li>
+              <Link  to='/categories' className="nav-links">Categories</Link>
+            </li>
+            <li>
+              <Link  to='/Favorited' className="nav-links">Favorited</Link>
+            </li>
+            <li>
+              <Link  to='/About' className="nav-links">About</Link>
             </li>
           </ul>
         </div>
       </div>
     );
-  }
 }
-export default Navbar;
+export default withRouter(Navbar);
