@@ -22,13 +22,6 @@ function App() {
           <Route path="/trending" component={Trending} />
           <Route path="/about" component={About} />
       </Switch>
-
-      <header className="App-header">
-      <div>
-        <h1>Off White</h1>
-      </div>
-      </header>
-      <Home />
     </div>
     </Router>
   );

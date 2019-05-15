@@ -5,6 +5,12 @@ class Home extends Component {
   render() {
     return (
         <div>
+
+      <header className="App-header">
+      <div>
+        <h1>Off White</h1>
+      </div>
+      </header>
             <div className="main-home">
                 <div className="temp-placeholder">Video Placeholder</div>
             </div>
