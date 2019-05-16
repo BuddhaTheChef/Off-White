@@ -7,6 +7,7 @@ class Catergories extends Component {
             <div>
                 <Navbar />
                 <h1>Catergories</h1>
+                <div style={{height: '671px',}}></div>
             </div>
         )
     }

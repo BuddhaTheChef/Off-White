@@ -7,6 +7,7 @@ import Favorited from './components/Favorited';
 import Trending from './components/Trending';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" component={About} />
       </Switch>
     </div>
+  <Footer/>
     </Router>
   );
 }

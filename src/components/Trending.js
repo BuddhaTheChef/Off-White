@@ -7,6 +7,7 @@ class Trending extends Component {
             <div>
                 <Navbar />
                 <h1>Trending</h1>
+                <div style={{height: '671px',}}></div>
             </div>
         )
     }

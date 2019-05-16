@@ -7,6 +7,7 @@ class About extends Component {
             <div>
                 <Navbar />
                 <h1>About</h1>
+                <div style={{height: '671px',}}></div>
             </div>
         )
     }

@@ -7,6 +7,7 @@ class Favorited extends Component {
             <div>
                 <Navbar />
                 <h1>Favorited</h1>
+                <div style={{height: '671px',}}></div>
             </div>
         )
     }

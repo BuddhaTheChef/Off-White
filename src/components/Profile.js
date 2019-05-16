@@ -7,6 +7,7 @@ class Profile extends Component {
             <div>
                 <Navbar />
                 <h1>Profile</h1>
+                <div style={{height: '671px',}}></div>
             </div>
         )
     }

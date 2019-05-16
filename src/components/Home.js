@@ -4,7 +4,7 @@ class Home extends Component {
 
   render() {
     return (
-        <div>
+    <div>
 
       <header className="App-header">
       <div>
@@ -38,7 +38,7 @@ class Home extends Component {
                         <div className="main-home">
                 <div className="temp-placeholder">Main Content</div>
             </div>
-            <div className="bot-home-div">
+            <div className="bot-home-div-3">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
                 <div className="bot-cat-home-div">
                     <div className="content-type-1">7</div>
@@ -46,6 +46,7 @@ class Home extends Component {
                     <div className="content-type-3">9</div>
                 </div>
             </div>
+        
         </div>    
     );
   }
