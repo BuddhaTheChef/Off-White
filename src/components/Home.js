@@ -1,9 +1,27 @@
 import React, { Component } from "react";
 import Navbar from './Navbar';
+import YouTube from 'react-youtube';
 
 class Home extends Component {
 
   render() {
+    const opts = {
+        height: '1060',
+        width: '1900',
+        playerVars: { // https://developers.google.com/youtube/player_parameters
+          autoplay: 1,
+          controls: 0,
+          start: 0,
+          mute:1,
+          enablejsapi: 1,
+          modestbranding: 0,
+          iv_load_policy: 3,
+          playsinline: 1,
+          showinfo: 0,
+          zoom: 1.5,
+          disablekb: 1,
+        }
+    };
     return (
     <div>
          <Navbar />
@@ -13,7 +31,13 @@ class Home extends Component {
       </div>
       </header>
             <div className="main-home">
-                <div className="temp-placeholder">Video Placeholder</div>
+                <div className="temp-placeholder">
+                <div class="overlay"></div>
+                <YouTube
+        videoId="eX3wd2DcVOs"
+        opts={opts}
+      />
+                </div>
             </div>
             <div className="bot-home-div">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
@@ -50,6 +74,10 @@ class Home extends Component {
         
         </div>    
     );
+  }
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    
   }
 } 
 
