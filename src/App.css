@@ -26,6 +26,18 @@ h1 {
   align-items: center;
 }
 
+.main-title-div {
+  z-index: 5;
+}
+
+.main-title {
+  font-size: 150px;
+  margin-right: 50%;
+  z-index: 5;
+  margin-top: 551px;
+  margin-left: 850px;
+}
+
 .temp-placeholder {
   color: whitesmoke;
   font-size: 30px;
@@ -36,7 +48,7 @@ h1 {
 }
 
 .temp-placeholder .overlay {
-  height: 100%;
+  height: 103%;
   width: 100%;
   position: absolute;
   top: 0px;

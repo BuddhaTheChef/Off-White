@@ -26,13 +26,13 @@ class Home extends Component {
     <div>
          <Navbar />
       <header className="App-header">
-      <div>
-        <h1>Off White</h1>
+      <div className="main-title-div">
+        <h1 className="main-title">NATVRE</h1>
       </div>
       </header>
             <div className="main-home">
                 <div className="temp-placeholder">
-                <div class="overlay"></div>
+                <div className="overlay"></div>
                 <YouTube
         videoId="eX3wd2DcVOs"
         opts={opts}
