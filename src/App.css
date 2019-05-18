@@ -1,5 +1,5 @@
 body {
-  background-color:#fffef2;
+  background-color:#1f1f1f;
   margin: 0px;
   padding: 0px; 
   width: 100%;
@@ -61,11 +61,15 @@ h1 {
 .bot-home-div {
   width: 100%;
   height: 970px;
-  background-color: #4bc491;
   display: flex;
   flex-direction: column;
   margin-top: 205px;
   margin-bottom: 205px;
+  background: linear-gradient(
+    rgba(20,20,20, .5), 
+    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1461886988361-c3d1d47fd6f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
+  background-repeat: no-repeat center;
+  background-size: cover;
 }
 
 .bot-home-div-3 {
@@ -80,10 +84,11 @@ h1 {
 .temp-h3-title {
   text-align: center;
   font-size: 30px;
+  color: whitesmoke;
 }
 
 .bot-cat-home-div {
-  background-color: whitesmoke;
+  background-color: rgba(245,245,245,0.7);
   margin: 0 auto;
   width: 95%;
   height: 80%;
@@ -95,7 +100,7 @@ h1 {
 .content-type-1 {
   width: 400px;
   height: 550px;
-  background-color:grey;
+  background-color:#ffffff;
   margin: auto;
   font-size: 35px;
   text-align: center;
@@ -104,7 +109,7 @@ h1 {
 .content-type-2 {
   width: 400px;
   height: 550px;
-  background-color:grey;
+  background-color:#ffffff;
   margin: auto;
   font-size: 35px;
   text-align: center;
@@ -113,7 +118,7 @@ h1 {
 .content-type-3 {
   width: 400px;
   height: 550px;
-  background-color:grey;
+  background-color:#ffffff;
   margin: auto;
   font-size: 35px;
   text-align: center;
@@ -173,7 +178,7 @@ h1 {
  .menu ul li a {
 	 text-transform: uppercase;
 	 text-decoration: none;
-   color: black;
+   color: white;
 
 }
  .menu ul li a:hover {
