@@ -18,7 +18,8 @@ h1 {
 }
 
 .main-home {
-  background: #4bc491;
+  /* background: #4bc491; */
+  background-color: #1f1f1f;
   width: 100%;
   height: 970px;
   display: flex;
@@ -75,10 +76,14 @@ h1 {
 .bot-home-div-3 {
   width: 100%;
   height: 970px;
-  background-color: #4bc491;
+  background: linear-gradient(
+    rgba(20,20,20, .5), 
+    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1461886988361-c3d1d47fd6f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
   display: flex;
   flex-direction: column;
   margin-top: 205px;
+  background-repeat: no-repeat center;
+  background-size: cover;
 }
 
 .temp-h3-title {
@@ -95,6 +100,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 
 .content-type-1 {
@@ -104,6 +110,7 @@ h1 {
   margin: auto;
   font-size: 35px;
   text-align: center;
+  border-radius: 4px;
 }
 
 .content-type-2 {
@@ -113,6 +120,7 @@ h1 {
   margin: auto;
   font-size: 35px;
   text-align: center;
+  border-radius: 4px;
 }
 
 .content-type-3 {
@@ -122,6 +130,7 @@ h1 {
   margin: auto;
   font-size: 35px;
   text-align: center;
+  border-radius: 4px;
 }
 
 .main-footer {
