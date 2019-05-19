@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from './Navbar';
 import YouTube from 'react-youtube';
+import Pinebranch from '../Media/pine-branch.svg';
 
 class Home extends Component {
 
@@ -39,7 +40,8 @@ class Home extends Component {
       />
                 </div>
             </div>
-            <div className="bot-home-div">
+            <img className="pine-branch-1" src={Pinebranch} alt="branch" />
+            <div className="bot-home-div-1">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
                 <div className="bot-cat-home-div">
                     <div className="content-type-1">1</div>
@@ -51,7 +53,7 @@ class Home extends Component {
                         <div className="main-home">
                 <div className="temp-placeholder">Main Content</div>
             </div>
-            <div className="bot-home-div">
+            <div className="bot-home-div-2">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
                 <div className="bot-cat-home-div">
                     <div className="content-type-1">4</div>

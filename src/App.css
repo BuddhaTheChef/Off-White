@@ -14,7 +14,6 @@ h1 {
   text-shadow: 2px 2px gainsboro;
   z-index: 1;
   position: absolute;
-
 }
 
 .main-home {
@@ -35,7 +34,7 @@ h1 {
   font-size: 150px;
   margin-right: 50%;
   z-index: 5;
-  margin-top: 551px;
+  margin-top: 369px;
   margin-left: 850px;
 }
 
@@ -49,17 +48,34 @@ h1 {
 }
 
 .temp-placeholder .overlay {
-  height: 103%;
+  height: 105%;
   width: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: 2;
-  background: black;
-  opacity: 0.5;
+  background-color: #000000;
+background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
+  opacity: 0.8;
 }
 
-.bot-home-div {
+.bot-home-div-1 {
+  width: 100%;
+  height: 970px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 282px;
+  margin-bottom: 205px;
+  background: linear-gradient(
+    rgba(20,20,20, .5), 
+    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80');
+  background-repeat: no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+
+.bot-home-div-2 {
   width: 100%;
   height: 970px;
   display: flex;
@@ -68,7 +84,7 @@ h1 {
   margin-bottom: 205px;
   background: linear-gradient(
     rgba(20,20,20, .5), 
-    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1461886988361-c3d1d47fd6f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
+    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80');
   background-repeat: no-repeat center;
   background-size: cover;
 }
@@ -78,7 +94,7 @@ h1 {
   height: 970px;
   background: linear-gradient(
     rgba(20,20,20, .5), 
-    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1461886988361-c3d1d47fd6f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
+    rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80');
   display: flex;
   flex-direction: column;
   margin-top: 205px;
@@ -134,14 +150,24 @@ h1 {
 }
 
 .main-footer {
-  background-color: rgb(66,66,66);
+  background-color: #1f1f1f;
   height: 300px;
 }
 
 .main-footer-title {
   display: inline-flex;
+  color: whitesmoke;
 }
 
+
+.pine-branch-1 {
+  position: absolute;
+  top: 515px;
+  right: 45px;
+  z-index: 4;
+  transform: rotate(320deg);
+  overflow: hidden;
+}
 
 /* /Side Modal/ */
 
@@ -165,7 +191,7 @@ h1 {
 	 height: 100%;
 	 overflow: hidden;
    padding-top: 50px;
-   z-index: 2;
+   z-index: 3;
 	 -webkit-transition-duration: 0.2s;
 	 -moz-transition-duration: 0.2s;
 	 -ms-transition-duration: 0.2s;
