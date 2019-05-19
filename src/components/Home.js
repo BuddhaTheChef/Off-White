@@ -41,6 +41,7 @@ class Home extends Component {
                 </div>
             </div>
             <img className="pine-branch-1" src={Pinebranch} alt="branch" />
+            <img className="vine-1" src="https://sitejerk.com/images/plant-5.png" alt="vine" />
             <div className="bot-home-div-1">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
                 <div className="bot-cat-home-div">

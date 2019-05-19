@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px; 
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -48,7 +49,7 @@ h1 {
 }
 
 .temp-placeholder .overlay {
-  height: 105%;
+  height: 103.1%;
   width: 100%;
   position: absolute;
   top: 0px;
@@ -169,6 +170,15 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   overflow: hidden;
 }
 
+.vine-1 {
+  position: absolute;
+  transform: scaleX(-1);
+  z-index: 7;
+  top: -34px;
+  height: 1550px;
+  left: -700px;
+}
+
 /* /Side Modal/ */
 
 
@@ -186,12 +196,12 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
  .menu {
    position: fixed;
 	 display: block;
-	 background-color: #aaa;
+	 background-color: rgb(51, 112, 59);
 	 width: 0px;
 	 height: 100%;
 	 overflow: hidden;
    padding-top: 50px;
-   z-index: 3;
+   z-index: 9;
 	 -webkit-transition-duration: 0.2s;
 	 -moz-transition-duration: 0.2s;
 	 -ms-transition-duration: 0.2s;
@@ -221,7 +231,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
 }
  .menuicon {
    position: fixed;
-   z-index: 4;
+   z-index: 10;
 	 top: 10px;
 	 left: 10px;
 	 display: block;
