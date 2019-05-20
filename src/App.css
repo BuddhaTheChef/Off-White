@@ -131,6 +131,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .content-type-2 {
@@ -144,6 +145,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .content-type-3 {
@@ -157,6 +159,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .pics1 {
