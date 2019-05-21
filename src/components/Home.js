@@ -2,8 +2,37 @@ import React, { Component } from "react";
 import Navbar from './Navbar';
 import YouTube from 'react-youtube';
 import Pinebranch from '../Media/pine-branch.svg';
+import Modal from 'react-modal';
 
 class Home extends Component {
+    constructor () {
+        super();
+        this.state = {
+          showModal: false,
+          showModal2: false
+        };
+        
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleOpenModal2 = this.handleOpenModal2.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+        this.handleCloseModal2 = this.handleCloseModal2.bind(this);
+      }
+      
+      handleOpenModal () {
+        this.setState({ showModal: true });
+      }
+      
+      handleOpenModal2 () {
+        this.setState({ showModal2: true });
+      }
+      
+      handleCloseModal () {
+        this.setState({ showModal: false });
+      }
+      
+      handleCloseModal2 () {
+        this.setState({ showModal2: false });
+      }
 
   render() {
     const opts = {
@@ -46,8 +75,8 @@ class Home extends Component {
             <div className="bot-home-div-1">
                 <h3 className="temp-h3-title">Product Placeholder</h3>
                 <div className="bot-cat-home-div">
-                    <div className="content-type-1"><img className="pics1" src="https://images.homedepot-static.com/productImages/05076193-7591-472e-b0c5-5530252e4806/svn/brussel-s-bonsai-bonsai-trees-dt-7079gmj-64_1000.jpg" alt="wow"></img>Rock Juniper</div>
-                    <div className="content-type-2"><img className="pics1" src="https://images.homedepot-static.com/productImages/bd8393eb-9cbd-4224-b7b8-7e15fbef5f7e/svn/brussel-s-bonsai-bonsai-trees-ct-0116ft-64_1000.jpg" alt="tree"></img>Chinese Elm</div>
+                    <div className="content-type-1" onClick={this.handleOpenModal}><img className="pics1" src="https://images.homedepot-static.com/productImages/05076193-7591-472e-b0c5-5530252e4806/svn/brussel-s-bonsai-bonsai-trees-dt-7079gmj-64_1000.jpg" alt="wow"></img>Rock Juniper</div>
+                    <div className="content-type-2" onClick={this.handleOpenModal2}><img className="pics1" src="https://images.homedepot-static.com/productImages/bd8393eb-9cbd-4224-b7b8-7e15fbef5f7e/svn/brussel-s-bonsai-bonsai-trees-ct-0116ft-64_1000.jpg" alt="tree"></img>Chinese Elm</div>
                     <div className="content-type-3"><img className="pics1" src="https://images-na.ssl-images-amazon.com/images/I/81Rx03JgEDL._SX355_.jpg" alt="wow"></img>Hemlock Bonsai</div>
                 </div>
             </div>
@@ -76,6 +105,23 @@ class Home extends Component {
                 </div>
             </div>
         
+
+                <Modal 
+           isOpen={this.state.showModal}
+           contentLabel="Modal #1 Global Style Override Example"
+           onRequestClose={this.handleCloseModal}
+        >
+          <p>Modal text!</p>
+          <button onClick={this.handleCloseModal}>Close Modal</button>
+        </Modal>
+        <Modal 
+           isOpen={this.state.showModal2}
+           contentLabel="Modal #2 Global Style Override Example"
+           onRequestClose={this.handleCloseModal2}
+        >
+          <p>Modal #2 text!</p>
+          <button onClick={this.handleCloseModal2}>Close Modal</button>
+        </Modal>
         </div>    
     );
   }
