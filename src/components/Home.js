@@ -75,7 +75,7 @@ class Home extends Component {
           alt="vine"
         />
         <div className="bot-home-div-1">
-          <h3 className="temp-h3-title">Product Placeholder</h3>
+          <h3 className="temp-h3-title">Beginner Trees</h3>
           <div className="bot-cat-home-div">
             <div className="content-type-1" onClick={this.handleOpenModal}>
               <img
@@ -107,17 +107,32 @@ class Home extends Component {
         <div className="main-home">
           <div className="temp-placeholder">
             <h3>Watering your Bosai Tree</h3>
-            <p>The number one cause of most bonsai tree deaths is under-watering. Because the soil layer is so shallow, it is prone to drying out very quickly. Bonsai trees should be watered right when the top layer of soil appears dry. Depending on the type and size of your tree, as well as the type of soil you use, the frequency of watering can differ and can even be once a day. Therefore, it’s best to water each of your bonsai plants individually, instead of sticking to a routine.
-
-When watering your bonsai tree, the main goal is to fully saturate the root system with water. To ensure proper saturation, keep watering until water escapes through the draining holes. To allow for proper draining, many bonsai trees come with a tray to collect excess water.
-
-Overwatering can also be detrimental for your bonsai tree. Symptoms of an overwatered bonsai include: yellowing of leaves and the shriveling of smaller branches. If a bonsai is overwatered, its roots are drowning in water and are deprived of oxygen which prevents further growth to support the tree. Overwatering can also result from poor-draining soil.
-
-To ensure that you are watering your bonsai properly, you’ll need to assess your bonsai tree daily. The rule of thumb is to water as soon as the soil appears dry.</p>
+            <p style={{ fontSize: "20px" }}>
+              The number one cause of most bonsai tree deaths is under-watering.
+              Because the soil layer is so shallow, it is prone to drying out
+              very quickly. Bonsai trees should be watered right when the top
+              layer of soil appears dry. Depending on the type and size of your
+              tree, as well as the type of soil you use, the frequency of
+              watering can differ and can even be once a day. Therefore, it’s
+              best to water each of your bonsai plants individually, instead of
+              sticking to a routine. When watering your bonsai tree, the main
+              goal is to fully saturate the root system with water. To ensure
+              proper saturation, keep watering until water escapes through the
+              draining holes. To allow for proper draining, many bonsai trees
+              come with a tray to collect excess water. Overwatering can also be
+              detrimental for your bonsai tree. Symptoms of an overwatered
+              bonsai include: yellowing of leaves and the shriveling of smaller
+              branches. If a bonsai is overwatered, its roots are drowning in
+              water and are deprived of oxygen which prevents further growth to
+              support the tree. Overwatering can also result from poor-draining
+              soil. To ensure that you are watering your bonsai properly, you’ll
+              need to assess your bonsai tree daily. The rule of thumb is to
+              water as soon as the soil appears dry.
+            </p>
           </div>
         </div>
         <div className="bot-home-div-2">
-          <h3 className="temp-h3-title">Product Placeholder</h3>
+          <h3 className="temp-h3-title">Intermdeiate Trees</h3>
           <div className="bot-cat-home-div">
             <div className="content-type-1">
               <img
@@ -149,23 +164,38 @@ To ensure that you are watering your bonsai properly, you’ll need to assess yo
         <div className="main-home">
           <div className="temp-placeholder">
             <h3>Pruning and Shaping your Bosai Tree</h3>
-            <p>
-                Pruning is essential for keeping bonsai trees small and for maintaining their compact shape. There are two main types of pruning: maintenance pruning and structural pruning.
-
-Maintenance pruning strengthens the tree by encouraging new growth. By cutting away young shoots and leaves it exposes the leaves underneath to air and sunlight which further strengthens the tree and benefits its overall health.
-
-Areas that require maintenance pruning include the branches, buds, and leaves. Pruning away branches encourages the growth of smaller branches and allows you to control the shape of your tree. Pruning buds away from branches produces a more compact leaf growth which encourages the growth of smaller leaves.
-
-Typically, you should prune your bonsai tree when you see new growth that’s starting to morph the shape of your tree in an undesirable manner. For flowering bonsais, pruning should take place during the spring to encourage more flowers to grow the following year.
-
-Structural pruning is a more advanced technique that should only be done when the tree is dormant. It involves the removal of the tree’s primary structural branches and requires the skills of a professional to ensure that the tree can recover.
-
-Another way to properly shape your bonsai tree is to wire its branches. You can control the shape and growth pattern of certain branches by wrapping a thin wire around them. Wiring is best done during winter when the leaves of the bonsai tree have fallen off. Be sure to keep an eye on the branch’s growth and remove the wire when necessary. If the branch grows too fast, it can grow into the wire and cause scarring.
+            <p style={{ fontSize: "20px" }}>
+              Pruning is essential for keeping bonsai trees small and for
+              maintaining their compact shape. There are two main types of
+              pruning: maintenance pruning and structural pruning. Maintenance
+              pruning strengthens the tree by encouraging new growth. By cutting
+              away young shoots and leaves it exposes the leaves underneath to
+              air and sunlight which further strengthens the tree and benefits
+              its overall health. Areas that require maintenance pruning include
+              the branches, buds, and leaves. Pruning away branches encourages
+              the growth of smaller branches and allows you to control the shape
+              of your tree. Pruning buds away from branches produces a more
+              compact leaf growth which encourages the growth of smaller leaves.
+              Typically, you should prune your bonsai tree when you see new
+              growth that’s starting to morph the shape of your tree in an
+              undesirable manner. For flowering bonsais, pruning should take
+              place during the spring to encourage more flowers to grow the
+              following year. Structural pruning is a more advanced technique
+              that should only be done when the tree is dormant. It involves the
+              removal of the tree’s primary structural branches and requires the
+              skills of a professional to ensure that the tree can recover.
+              Another way to properly shape your bonsai tree is to wire its
+              branches. You can control the shape and growth pattern of certain
+              branches by wrapping a thin wire around them. Wiring is best done
+              during winter when the leaves of the bonsai tree have fallen off.
+              Be sure to keep an eye on the branch’s growth and remove the wire
+              when necessary. If the branch grows too fast, it can grow into the
+              wire and cause scarring.
             </p>
           </div>
         </div>
         <div className="bot-home-div-3">
-          <h3 className="temp-h3-title">Product Placeholder</h3>
+          <h3 className="temp-h3-title">Advanced Trees</h3>
           <div className="bot-cat-home-div">
             <div className="content-type-1">
               <img
@@ -194,33 +224,54 @@ Another way to properly shape your bonsai tree is to wire its branches. You can 
           </div>
         </div>
         <div className="temp-placeholder">
-            <h3>Choosing the Right Soil For Your Bonsai</h3>
-            <p>
-            
+          <h3>Choosing the Right Soil For Your Bonsai</h3>
+          <p style={{ fontSize: "20px" }}>
+            The key to choosing the right soil for your bonsai is to choose one
+            that offers proper drainage. Add large particles to your soil
+            mixture, such as volcanic rock or stones, to improve drainage and to
+            introduce air into the soil. The ideal soil mixture should also be
+            able to hold water which can be improved by adding clay. Fertilizing
+            your bonsai ensures that it receives the proper amount of nutrients
+            it needs to stay healthy. A balanced bonsai fertilizer contains
+            equal amounts of nitrogen, phosphorus and potassium. Before you
+            fertilize, make sure that you’ve watered your tree thoroughly as it
+            is harmful to fertilize the plant while the soil is dry. Be sure to
+            read the instructions on the fertilizer to avoid overfertilizing.
+          </p>
 
+          <h3>Repotting Your Bonsai</h3>
 
-The key to choosing the right soil for your bonsai is to choose one that offers proper drainage.  Add large particles to your soil mixture, such as volcanic rock or stones, to improve drainage and to introduce air into the soil. The ideal soil mixture should also be able to hold water which can be improved by adding clay.
-
-Fertilizing your bonsai ensures that it receives the proper amount of nutrients it needs to stay healthy. A balanced bonsai fertilizer contains equal amounts of nitrogen, phosphorus and potassium. Before you fertilize, make sure that you’ve watered your tree thoroughly as it is harmful to fertilize the plant while the soil is dry. Be sure to read the instructions on the fertilizer to avoid overfertilizing.
-</p>
- 
-
-<h3>Repotting Your Bonsai</h3>
-
-<p>
-Repotting is a key factor in maintaining the health of your bonsai tree. The purpose of repotting is to remove excess roots which can cause the tree to starve, or not receive enough nutrients for its mass. Repotting also ensures that your tree can continue to thrive within a small pot. Bonsai trees should be repotted once every two to five years, depending on how quickly your bonsai tree grows.
-
-Here are the basic steps to repotting your bonsai tree:
-
-1.Carefully remove the tree from its pot.
-2.Using sharp shears, trim away the outer layer of roots.
-3.Inspect the root mass for areas of rot trim away as needed. These areas can indicate where the bonsai is not getting enough drainage.
-4.Clean the pot itself and remove any brown or green spots.
-5.Place mesh squares over the drainage holes to prevent soil from falling out.
-6.Layer the bottom of the pot with soil and place the tree on top.
-7.Fill the remaining holes and gaps where the root used to exist with soil.      
- </p>
-          </div>
+          <p style={{ fontSize: "20px" }}>
+            Repotting is a key factor in maintaining the health of your bonsai
+            tree. The purpose of repotting is to remove excess roots which can
+            cause the tree to starve, or not receive enough nutrients for its
+            mass. Repotting also ensures that your tree can continue to thrive
+            within a small pot. Bonsai trees should be repotted once every two
+            to five years, depending on how quickly your bonsai tree grows. Here
+            are the basic steps to repotting your bonsai tree:
+            <ol style={{ fontSize: "20px" }}>
+              <li>Carefully remove the tree from its pot.</li>
+              <li>Using sharp shears, trim away the outer layer of roots.</li>
+              <li>
+                Inspect the root mass for areas of rot trim away as needed.
+                These areas can indicate where the bonsai is not getting enough
+                drainage.
+              </li>
+              <li>Clean the pot itself and remove any brown or green spots.</li>
+              <li>
+                Place mesh squares over the drainage holes to prevent soil from
+                falling out.
+              </li>
+              <li>
+                Layer the bottom of the pot with soil and place the tree on top.
+              </li>
+              <li>
+                Fill the remaining holes and gaps where the root used to exist
+                with soil.{" "}
+              </li>
+            </ol>
+          </p>
+        </div>
 
         <Modal
           isOpen={this.state.showModal}

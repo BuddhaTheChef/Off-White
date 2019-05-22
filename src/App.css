@@ -13,7 +13,7 @@ h1 {
   margin-left: 75px;
   color: white;
   text-shadow: 2px 2px gainsboro;
-  z-index: 1;
+  /* z-index: 1; */
   position: absolute;
 }
 
@@ -28,13 +28,13 @@ h1 {
 }
 
 .main-title-div {
-  z-index: 5;
+  z-index: 2;
 }
 
 .main-title {
   font-size: 150px;
   margin-right: 50%;
-  z-index: 5;
+  z-index: 2;
   margin-top: 369px;
   margin-left: 850px;
 }
@@ -42,7 +42,6 @@ h1 {
 .temp-placeholder {
   color: whitesmoke;
   font-size: 27px;
-  text-align: center;
   overflow: hidden;
   margin-top: -20px;
   margin-left: -5px;
@@ -56,7 +55,7 @@ h1 {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
+  /* z-index: 2; */
   background-color: #000000;
 background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   opacity: 0.8;
@@ -74,7 +73,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
     rgba(20,20,20, .5)),url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80');
   background-repeat: no-repeat center;
   background-size: cover;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 .bot-home-div-2 {
@@ -182,7 +181,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   position: absolute;
   top: 515px;
   right: 45px;
-  z-index: 4;
+  /* z-index: 4; */
   transform: rotate(320deg);
   overflow: hidden;
 }
@@ -190,7 +189,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
 .vine-1 {
   position: absolute;
   transform: scaleX(-1);
-  z-index: 7;
+  /* z-index: 7; */
   top: -34px;
   height: 1550px;
   left: -700px;
@@ -334,6 +333,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
 
 .modal {
   position: fixed;
+  z-index: 100 !important;
   top: 0;
   left: 0;
   width:100%;
@@ -349,6 +349,7 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+  z-index: 51 !important;
 }
 
 .display-block {
