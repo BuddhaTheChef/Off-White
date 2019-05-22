@@ -1,134 +1,250 @@
 import React, { Component } from "react";
-import Navbar from './Navbar';
-import YouTube from 'react-youtube';
-import Pinebranch from '../Media/pine-branch.svg';
-import Modal from 'react-modal';
+import Navbar from "./Navbar";
+import YouTube from "react-youtube";
+import Pinebranch from "../Media/pine-branch.svg";
+import Modal from "react-modal";
 
 class Home extends Component {
-    constructor () {
-        super();
-        this.state = {
-          showModal: false,
-          showModal2: false
-        };
-        
-        this.handleOpenModal = this.handleOpenModal.bind(this);
-        this.handleOpenModal2 = this.handleOpenModal2.bind(this);
-        this.handleCloseModal = this.handleCloseModal.bind(this);
-        this.handleCloseModal2 = this.handleCloseModal2.bind(this);
-      }
-      
-      handleOpenModal () {
-        this.setState({ showModal: true });
-      }
-      
-      handleOpenModal2 () {
-        this.setState({ showModal2: true });
-      }
-      
-      handleCloseModal () {
-        this.setState({ showModal: false });
-      }
-      
-      handleCloseModal2 () {
-        this.setState({ showModal2: false });
-      }
+  constructor() {
+    super();
+    this.state = {
+      showModal: false,
+      showModal2: false
+    };
+
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleOpenModal2 = this.handleOpenModal2.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.handleCloseModal2 = this.handleCloseModal2.bind(this);
+  }
+
+  handleOpenModal() {
+    this.setState({ showModal: true });
+  }
+
+  handleOpenModal2() {
+    this.setState({ showModal2: true });
+  }
+
+  handleCloseModal() {
+    this.setState({ showModal: false });
+  }
+
+  handleCloseModal2() {
+    this.setState({ showModal2: false });
+  }
 
   render() {
     const opts = {
-        height: '1060',
-        width: '1900',
-        playerVars: { // https://developers.google.com/youtube/player_parameters
-          autoplay: 1,
-          controls: 0,
-          start: 60,
-          loop: 1,
-          mute:1,
-          enablejsapi: 1,
-          modestbranding: 0,
-          iv_load_policy: 3,
-          playsinline: 1,
-          showinfo: 0,
-          zoom: 1.5,
-          disablekb: 1,
-        }
+      height: "1060",
+      width: "1900",
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+        controls: 0,
+        start: 60,
+        loop: 1,
+        mute: 1,
+        enablejsapi: 1,
+        modestbranding: 0,
+        iv_load_policy: 3,
+        playsinline: 1,
+        showinfo: 0,
+        zoom: 1.5,
+        disablekb: 1
+      }
     };
     return (
-    <div>
-         <Navbar />
-      <header className="App-header">
-      <div className="main-title-div">
-        <h1 className="main-title">NATVRE</h1>
-      </div>
-      </header>
-            <div className="main-home">
-                <div className="temp-placeholder">
-                <div className="overlay"></div>
-                <YouTube
-        videoId="eX3wd2DcVOs"
-        opts={opts}
-      />
-                </div>
+      <div>
+        <Navbar />
+        <header className="App-header">
+          <div className="main-title-div">
+            <h1 className="main-title">NATVRE</h1>
+          </div>
+        </header>
+        <div className="main-home">
+          <div className="temp-placeholder">
+            <div className="overlay" />
+            <YouTube videoId="eX3wd2DcVOs" opts={opts} />
+          </div>
+        </div>
+        <img className="pine-branch-1" src={Pinebranch} alt="branch" />
+        <img
+          className="vine-1"
+          src="https://sitejerk.com/images/plant-5.png"
+          alt="vine"
+        />
+        <div className="bot-home-div-1">
+          <h3 className="temp-h3-title">Product Placeholder</h3>
+          <div className="bot-cat-home-div">
+            <div className="content-type-1" onClick={this.handleOpenModal}>
+              <img
+                className="pics1"
+                src="https://images.homedepot-static.com/productImages/05076193-7591-472e-b0c5-5530252e4806/svn/brussel-s-bonsai-bonsai-trees-dt-7079gmj-64_1000.jpg"
+                alt="wow"
+              />
+              Rock Juniper
             </div>
-            <img className="pine-branch-1" src={Pinebranch} alt="branch" />
-            <img className="vine-1" src="https://sitejerk.com/images/plant-5.png" alt="vine" />
-            <div className="bot-home-div-1">
-                <h3 className="temp-h3-title">Product Placeholder</h3>
-                <div className="bot-cat-home-div">
-                    <div className="content-type-1" onClick={this.handleOpenModal}><img className="pics1" src="https://images.homedepot-static.com/productImages/05076193-7591-472e-b0c5-5530252e4806/svn/brussel-s-bonsai-bonsai-trees-dt-7079gmj-64_1000.jpg" alt="wow"></img>Rock Juniper</div>
-                    <div className="content-type-2" onClick={this.handleOpenModal2}><img className="pics1" src="https://images.homedepot-static.com/productImages/bd8393eb-9cbd-4224-b7b8-7e15fbef5f7e/svn/brussel-s-bonsai-bonsai-trees-ct-0116ft-64_1000.jpg" alt="tree"></img>Chinese Elm</div>
-                    <div className="content-type-3"><img className="pics1" src="https://images-na.ssl-images-amazon.com/images/I/81Rx03JgEDL._SX355_.jpg" alt="wow"></img>Hemlock Bonsai</div>
-                </div>
+            <div className="content-type-2" onClick={this.handleOpenModal2}>
+              <img
+                className="pics1"
+                src="https://images.homedepot-static.com/productImages/bd8393eb-9cbd-4224-b7b8-7e15fbef5f7e/svn/brussel-s-bonsai-bonsai-trees-ct-0116ft-64_1000.jpg"
+                alt="tree"
+              />
+              Chinese Elm
             </div>
+            <div className="content-type-3">
+              <img
+                className="pics1"
+                src="https://images-na.ssl-images-amazon.com/images/I/81Rx03JgEDL._SX355_.jpg"
+                alt="wow"
+              />
+              Hemlock Bonsai
+            </div>
+          </div>
+        </div>
 
-                        <div className="main-home">
-                <div className="temp-placeholder">Main Content</div>
-            </div>
-            <div className="bot-home-div-2">
-                <h3 className="temp-h3-title">Product Placeholder</h3>
-                <div className="bot-cat-home-div">
-                    <div className="content-type-1"><img className="pics1" src="https://cdn11.bigcommerce.com/s-bhqinueo9m/images/stencil/1024x1024/products/14642/8047/ginseng-grafted-ficus-small-indoor-bonsai-ct7012gmf__47740.1480631167.jpg?c=2" alt="wow"></img>Shohin Flowering Tea Tree</div>
-                    <div className="content-type-2"><img className="pics1" src="https://cdn1.bigcommerce.com/server4100/6ys4nr/products/1757/images/5932/ChineseElm__34952.1417016213.1280.1280.JPG?c=2" alt="wow"></img>Golden Gate Ficus</div>
-                    <div className="content-type-3"><img className="pics1" src="https://cdn11.bigcommerce.com/s-bhqinueo9m/images/stencil/1024x1024/products/14633/8040/fukien-tea-medium-indoor-bonsai-ct0116ft__99376.1480631164.jpg?c=2" alt="wow"></img> Taiwan Ficus Bonsai </div>
-                </div>
-            </div>
+        <div className="main-home">
+          <div className="temp-placeholder">
+            <h3>Watering your Bosai Tree</h3>
+            <p>The number one cause of most bonsai tree deaths is under-watering. Because the soil layer is so shallow, it is prone to drying out very quickly. Bonsai trees should be watered right when the top layer of soil appears dry. Depending on the type and size of your tree, as well as the type of soil you use, the frequency of watering can differ and can even be once a day. Therefore, it’s best to water each of your bonsai plants individually, instead of sticking to a routine.
 
-                        <div className="main-home">
-                <div className="temp-placeholder">Main Content</div>
-            </div>
-            <div className="bot-home-div-3">
-                <h3 className="temp-h3-title">Product Placeholder</h3>
-                <div className="bot-cat-home-div">
-                    <div className="content-type-1"><img className="pics1" src="https://www.easternleaf.com/v/vspfiles/photos/804550-03-2.jpg" alt="wow"></img>Minature Boxwood</div>
-                    <div className="content-type-2"><img className="pics1" src="https://www.redlandsdailyfacts.com/wp-content/uploads/migration/2015/201505/NEWS_150519634_AR_0_TGUQUXVHUNFI.jpg?w=535" alt="wow"></img>Juniper procubens nana</div>
-                    <div className="content-type-3"><img className="pics1" src="https://cdn.shopify.com/s/files/1/0422/3365/collections/Fukien_Bonsai_Tree_large_68344548-0145-41b4-8409-2a886f17d724_large.jpg?v=1502917813" alt="wow"></img>Fukien Tea Bonsai </div>
-                </div>
-            </div>
-        
+When watering your bonsai tree, the main goal is to fully saturate the root system with water. To ensure proper saturation, keep watering until water escapes through the draining holes. To allow for proper draining, many bonsai trees come with a tray to collect excess water.
 
-                <Modal 
-           isOpen={this.state.showModal}
-           contentLabel="Modal #1 Global Style Override Example"
-           onRequestClose={this.handleCloseModal}
+Overwatering can also be detrimental for your bonsai tree. Symptoms of an overwatered bonsai include: yellowing of leaves and the shriveling of smaller branches. If a bonsai is overwatered, its roots are drowning in water and are deprived of oxygen which prevents further growth to support the tree. Overwatering can also result from poor-draining soil.
+
+To ensure that you are watering your bonsai properly, you’ll need to assess your bonsai tree daily. The rule of thumb is to water as soon as the soil appears dry.</p>
+          </div>
+        </div>
+        <div className="bot-home-div-2">
+          <h3 className="temp-h3-title">Product Placeholder</h3>
+          <div className="bot-cat-home-div">
+            <div className="content-type-1">
+              <img
+                className="pics1"
+                src="https://cdn11.bigcommerce.com/s-bhqinueo9m/images/stencil/1024x1024/products/14642/8047/ginseng-grafted-ficus-small-indoor-bonsai-ct7012gmf__47740.1480631167.jpg?c=2"
+                alt="wow"
+              />
+              Shohin Flowering Tea Tree
+            </div>
+            <div className="content-type-2">
+              <img
+                className="pics1"
+                src="https://cdn1.bigcommerce.com/server4100/6ys4nr/products/1757/images/5932/ChineseElm__34952.1417016213.1280.1280.JPG?c=2"
+                alt="wow"
+              />
+              Golden Gate Ficus
+            </div>
+            <div className="content-type-3">
+              <img
+                className="pics1"
+                src="https://cdn11.bigcommerce.com/s-bhqinueo9m/images/stencil/1024x1024/products/14633/8040/fukien-tea-medium-indoor-bonsai-ct0116ft__99376.1480631164.jpg?c=2"
+                alt="wow"
+              />{" "}
+              Taiwan Ficus Bonsai{" "}
+            </div>
+          </div>
+        </div>
+
+        <div className="main-home">
+          <div className="temp-placeholder">
+            <h3>Pruning and Shaping your Bosai Tree</h3>
+            <p>
+                Pruning is essential for keeping bonsai trees small and for maintaining their compact shape. There are two main types of pruning: maintenance pruning and structural pruning.
+
+Maintenance pruning strengthens the tree by encouraging new growth. By cutting away young shoots and leaves it exposes the leaves underneath to air and sunlight which further strengthens the tree and benefits its overall health.
+
+Areas that require maintenance pruning include the branches, buds, and leaves. Pruning away branches encourages the growth of smaller branches and allows you to control the shape of your tree. Pruning buds away from branches produces a more compact leaf growth which encourages the growth of smaller leaves.
+
+Typically, you should prune your bonsai tree when you see new growth that’s starting to morph the shape of your tree in an undesirable manner. For flowering bonsais, pruning should take place during the spring to encourage more flowers to grow the following year.
+
+Structural pruning is a more advanced technique that should only be done when the tree is dormant. It involves the removal of the tree’s primary structural branches and requires the skills of a professional to ensure that the tree can recover.
+
+Another way to properly shape your bonsai tree is to wire its branches. You can control the shape and growth pattern of certain branches by wrapping a thin wire around them. Wiring is best done during winter when the leaves of the bonsai tree have fallen off. Be sure to keep an eye on the branch’s growth and remove the wire when necessary. If the branch grows too fast, it can grow into the wire and cause scarring.
+            </p>
+          </div>
+        </div>
+        <div className="bot-home-div-3">
+          <h3 className="temp-h3-title">Product Placeholder</h3>
+          <div className="bot-cat-home-div">
+            <div className="content-type-1">
+              <img
+                className="pics1"
+                src="https://www.easternleaf.com/v/vspfiles/photos/804550-03-2.jpg"
+                alt="wow"
+              />
+              Minature Boxwood
+            </div>
+            <div className="content-type-2">
+              <img
+                className="pics1"
+                src="https://www.redlandsdailyfacts.com/wp-content/uploads/migration/2015/201505/NEWS_150519634_AR_0_TGUQUXVHUNFI.jpg?w=535"
+                alt="wow"
+              />
+              Juniper procubens nana
+            </div>
+            <div className="content-type-3">
+              <img
+                className="pics1"
+                src="https://cdn.shopify.com/s/files/1/0422/3365/collections/Fukien_Bonsai_Tree_large_68344548-0145-41b4-8409-2a886f17d724_large.jpg?v=1502917813"
+                alt="wow"
+              />
+              Fukien Tea Bonsai{" "}
+            </div>
+          </div>
+        </div>
+        <div className="temp-placeholder">
+            <h3>Choosing the Right Soil For Your Bonsai</h3>
+            <p>
+            
+
+
+The key to choosing the right soil for your bonsai is to choose one that offers proper drainage.  Add large particles to your soil mixture, such as volcanic rock or stones, to improve drainage and to introduce air into the soil. The ideal soil mixture should also be able to hold water which can be improved by adding clay.
+
+Fertilizing your bonsai ensures that it receives the proper amount of nutrients it needs to stay healthy. A balanced bonsai fertilizer contains equal amounts of nitrogen, phosphorus and potassium. Before you fertilize, make sure that you’ve watered your tree thoroughly as it is harmful to fertilize the plant while the soil is dry. Be sure to read the instructions on the fertilizer to avoid overfertilizing.
+</p>
+ 
+
+<h3>Repotting Your Bonsai</h3>
+
+<p>
+Repotting is a key factor in maintaining the health of your bonsai tree. The purpose of repotting is to remove excess roots which can cause the tree to starve, or not receive enough nutrients for its mass. Repotting also ensures that your tree can continue to thrive within a small pot. Bonsai trees should be repotted once every two to five years, depending on how quickly your bonsai tree grows.
+
+Here are the basic steps to repotting your bonsai tree:
+
+1.Carefully remove the tree from its pot.
+2.Using sharp shears, trim away the outer layer of roots.
+3.Inspect the root mass for areas of rot trim away as needed. These areas can indicate where the bonsai is not getting enough drainage.
+4.Clean the pot itself and remove any brown or green spots.
+5.Place mesh squares over the drainage holes to prevent soil from falling out.
+6.Layer the bottom of the pot with soil and place the tree on top.
+7.Fill the remaining holes and gaps where the root used to exist with soil.      
+ </p>
+          </div>
+
+        <Modal
+          isOpen={this.state.showModal}
+          contentLabel="Modal #1 Global Style Override Example"
+          onRequestClose={this.handleCloseModal}
         >
           <p>Modal text!</p>
           <button onClick={this.handleCloseModal}>Close Modal</button>
         </Modal>
-        <Modal 
-           isOpen={this.state.showModal2}
-           contentLabel="Modal #2 Global Style Override Example"
-           onRequestClose={this.handleCloseModal2}
+
+        <Modal
+          isOpen={this.state.showModal2}
+          contentLabel="Modal #2 Global Style Override Example"
+          onRequestClose={this.handleCloseModal2}
         >
           <p>Modal #2 text!</p>
           <button onClick={this.handleCloseModal2}>Close Modal</button>
         </Modal>
-        </div>    
+      </div>
     );
   }
   _onReady(event) {
     // access to player in all event handlers via event.target
-    
   }
-} 
+}
 
 export default Home;
