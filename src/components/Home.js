@@ -367,48 +367,48 @@ class Home extends Component {
         </Modal>
 
         <Modal
-          isOpen={this.state.showModal2}
-          contentLabel="Modal #2 Global Style Override Example"
-          onRequestClose={this.handleCloseModal2}
+          isOpen={this.state.showModal5}
+          contentLabel="Modal #5 Global Style Override Example"
+          onRequestClose={this.handleCloseModal5}
         >
-          <p>Modal #2 text!</p>
-          <button onClick={this.handleCloseModal2}>Close Modal</button>
+          <p>Modal #5 text!</p>
+          <button onClick={this.handleCloseModal5}>Close Modal</button>
         </Modal>
 
         <Modal
-          isOpen={this.state.showModal2}
-          contentLabel="Modal #2 Global Style Override Example"
-          onRequestClose={this.handleCloseModal2}
+          isOpen={this.state.showModal6}
+          contentLabel="Modal #6 Global Style Override Example"
+          onRequestClose={this.handleCloseModal6}
         >
-          <p>Modal #2 text!</p>
-          <button onClick={this.handleCloseModal2}>Close Modal</button>
+          <p>Modal #6 text!</p>
+          <button onClick={this.handleCloseModal6}>Close Modal</button>
         </Modal>
 
         <Modal
-          isOpen={this.state.showModal2}
-          contentLabel="Modal #2 Global Style Override Example"
-          onRequestClose={this.handleCloseModal2}
+          isOpen={this.state.showModal7}
+          contentLabel="Modal #7 Global Style Override Example"
+          onRequestClose={this.handleCloseModal7}
         >
-          <p>Modal #2 text!</p>
-          <button onClick={this.handleCloseModal2}>Close Modal</button>
+          <p>Modal #7 text!</p>
+          <button onClick={this.handleCloseModal7}>Close Modal</button>
         </Modal>
 
         <Modal
-          isOpen={this.state.showModal2}
-          contentLabel="Modal #2 Global Style Override Example"
-          onRequestClose={this.handleCloseModal2}
+          isOpen={this.state.showModal8}
+          contentLabel="Modal #8 Global Style Override Example"
+          onRequestClose={this.handleCloseModal8}
         >
-          <p>Modal #2 text!</p>
-          <button onClick={this.handleCloseModal2}>Close Modal</button>
+          <p>Modal #8 text!</p>
+          <button onClick={this.handleCloseModal8}>Close Modal</button>
         </Modal>
 
         <Modal
-          isOpen={this.state.showModal2}
-          contentLabel="Modal #2 Global Style Override Example"
-          onRequestClose={this.handleCloseModal2}
+          isOpen={this.state.showModal9}
+          contentLabel="Modal #9 Global Style Override Example"
+          onRequestClose={this.handleCloseModal9}
         >
-          <p>Modal #2 text!</p>
-          <button onClick={this.handleCloseModal2}>Close Modal</button>
+          <p>Modal #9 text!</p>
+          <button onClick={this.handleCloseModal9}>Close Modal</button>
         </Modal>
       </div>
     );
