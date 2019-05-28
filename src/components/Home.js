@@ -335,7 +335,11 @@ class Home extends Component {
           onRequestClose={this.handleCloseModal}
         >
           <div className="modal-main">
-            <p>Modal text!</p>
+            <h2>Modal text!</h2>
+            <p>Image placeholder</p>
+            <p>Maybe some paralax ideas</p>
+            <p>About the image content on side</p>
+            <p>price below image</p>
             <button onClick={this.handleCloseModal}>Close Modal</button>
           </div>
         </Modal>

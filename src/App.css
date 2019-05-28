@@ -350,6 +350,10 @@ background-image: linear-gradient( hsl(0, 0%, 51%) 0%,#000000  100%);
   left:50%;
   transform: translate(-50%,-50%);
   z-index: 51 !important;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .display-block {
