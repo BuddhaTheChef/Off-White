@@ -331,12 +331,15 @@ class Home extends Component {
         </div>
 
         <Modal
+          className="modal"
           isOpen={this.state.showModal}
           contentLabel="Modal #1 Global Style Override Example"
           onRequestClose={this.handleCloseModal}
         >
-          <p>Modal text!</p>
+            <div className="modal-main">
+            <p>Modal text!</p>
           <button onClick={this.handleCloseModal}>Close Modal</button>
+            </div>
         </Modal>
 
         <Modal
